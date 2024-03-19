@@ -2,7 +2,7 @@
 
 A fully functional Ray.so clone (a powerful tool for sharing code snippets) with additional features. Share beautiful screenshots of your code on your social media platforms.
 
-**Project live at:** [https://sinppet-code.vercel.app/)
+**Project live at:**[https://sinppet-code.vercel.app/)
 
 ---
 
