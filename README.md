@@ -1,10 +1,17 @@
-# [Snippet.code](https://sinppet-code.vercel.app/)
+
+# Snppiet.Code
 
 A fully functional Ray.so clone (a powerful tool for sharing code snippets) with additional features. Share beautiful screenshots of your code on your social media platforms.
 
-**Project live at:**[https://sinppet-code.vercel.app/)
+## Demo
+Link: https://sinppet-code.vercel.app/
 
----
+
+
+## Screenshots
+
+![App Screenshot](https://res.cloudinary.com/dbdqc0uzq/image/upload/v1710918840/Screenshots/wvcrxxkiycfijrbdojig.jpg)
+
 
 ## Features
 
@@ -13,8 +20,6 @@ A fully functional Ray.so clone (a powerful tool for sharing code snippets) with
 - Support for all popuplar languages with auto-detection and syntax highlighting.
 - Multiple export options: save as SVG/PNG, copy to clipboard and copy link.
 - Other customization options like: font size, padding, background etc.
-
----
 
 ## Technologies used
 
@@ -30,24 +35,30 @@ A fully functional Ray.so clone (a powerful tool for sharing code snippets) with
 - [Resizable](https://www.npmjs.com/package/re-resizable) - A resizable component for React.
 - [Vite](https://vitejs.dev/) - Frontend Tooling
 
----
 
-## Build steps
+## Run Locally
 
-1. Clone this repo
-
-```bash
-git clone https://github.com/rishabhraikwar98/sinppet.code && cd code-snippet.code
-```
-
-2. Install project dependecies
+Clone the project
 
 ```bash
-npm install
+  git clone https://github.com/rishabhraikwar98/sinppet.code
 ```
 
-3. Build the project and start a local server
+Go to the project directory
 
 ```bash
-npm run build && npm run serve
+  cd snippet.code
 ```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
