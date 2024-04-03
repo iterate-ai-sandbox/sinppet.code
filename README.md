@@ -17,7 +17,7 @@ Link: https://sinppet-code.vercel.app/
 
 - 10+ elegant themes (light + dark theme included).
 - 12+ font styles (popular monospace fonts).
-- Support for all popuplar languages with auto-detection and syntax highlighting.
+- Support for all popular languages with auto-detection and syntax highlighting.
 - Multiple export options: save as SVG/PNG, copy to clipboard and copy link.
 - Other customization options like: font size, padding, background etc.
 
