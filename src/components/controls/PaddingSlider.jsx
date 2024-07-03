@@ -1,4 +1,5 @@
 import useStore from "@/store"
+import mixpanel from 'mixpanel-browser';
 import { Slider } from "../ui/slider"
 
 export default function PaddingSlider() {
@@ -12,7 +13,10 @@ export default function PaddingSlider() {
       <Slider
         className="w-44 my-5"
         value={[padding]}
-        onValueChange={([padding]) => useStore.setState({ padding })}
+        onValueChange={([newPadding]) => {
+          useStore.setState({ padding: newPadding });
+          mixpanel.track('padding', { padding_amount: newPadding, padding_changed: 'True' });
+        }}
         max={128}
         step={8}
       />
