@@ -3,12 +3,6 @@ import { Switch } from "../ui/switch"
 
 export default function DarkModeSwitch() {
   const darkMode = useStore((state) => state.darkMode)
-  const setDarkMode = useStore((state) => state.setDarkMode);
-
-  const handleDarkModeToggle = () => {
-    setDarkMode(!darkMode);
-    mixpanel.track('Dark Mode Toggled', { darkMode: !darkMode }); // Track dark mode toggle event
-  };
 
   return (
     <div>
@@ -17,7 +11,7 @@ export default function DarkModeSwitch() {
       </label>
       <Switch
         checked={darkMode}
-        onCheckedChange={handleDarkModeToggle}
+        onCheckedChange={(checked) => {useStore.setState({ darkMode: checked }); mixpanel.track('Dark Mode Toggled', { darkMode: !darkMode });}}
         className="my-1.5"
       />
     </div>

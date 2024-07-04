@@ -12,10 +12,6 @@ import useStore from "@/store"
 export default function ThemeSelect() {
   const theme = useStore((state) => state.theme)
 
-  const handleThemeChange = (newTheme) => {
-    useStore.setState({ newTheme })
-    mixpanel.track('Theme Changed', { theme: newTheme }); // Track theme change event
-  };
   return (
     <div>
       <label className="block mb-2 text-xs font-medium text-neutral-400">
@@ -23,7 +19,7 @@ export default function ThemeSelect() {
       </label>
       <Select
         value={theme}
-        onValueChange={(e) => handleThemeChange(e.target.value)}
+        onValueChange={(theme) => {mixpanel.track('Theme Changed', { theme: newTheme });useStore.setState({ theme })}}
       >
         <SelectTrigger className="w-40">
           <SelectValue placeholder="Select Theme" />
