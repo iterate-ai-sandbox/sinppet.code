@@ -8,6 +8,7 @@ import {
 } from "../ui/select"
 import { cn } from "@/lib/utils"
 import useStore from "@/store"
+import mixpanel from "mixpanel-browser";
 
 export default function ThemeSelect() {
   const theme = useStore((state) => state.theme)
