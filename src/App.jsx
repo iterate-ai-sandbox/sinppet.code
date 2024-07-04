@@ -18,7 +18,7 @@ import { ResetIcon } from "@radix-ui/react-icons"
 import WidthMeasurement from "./components/WidthMeasurement"
 import mixpanel from 'mixpanel-browser';
 
-mixpanel.init(process.env.VITE_MIXPANEL_TOKEN);
+mixpanel.init('19cb47a7aef947d8caa21c15d860fd90');
 
 function App() {
   const [width, setWidth] = useState("auto")
