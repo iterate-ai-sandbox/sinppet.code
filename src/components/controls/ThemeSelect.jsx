@@ -8,7 +8,6 @@ import {
 } from "../ui/select"
 import { cn } from "@/lib/utils"
 import useStore from "@/store"
-import mixpanel from "mixpanel-browser";
 
 export default function ThemeSelect() {
   const theme = useStore((state) => state.theme)
@@ -20,7 +19,7 @@ export default function ThemeSelect() {
       </label>
       <Select
         value={theme}
-        onValueChange={(theme) => {mixpanel.track('Theme Changed', { theme: newTheme });useStore.setState({ theme })}}
+        onValueChange={(theme) => useStore.setState({ theme })}
       >
         <SelectTrigger className="w-40">
           <SelectValue placeholder="Select Theme" />
