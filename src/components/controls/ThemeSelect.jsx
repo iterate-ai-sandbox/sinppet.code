@@ -20,7 +20,7 @@ export default function ThemeSelect() {
       </label>
       <Select
         value={theme}
-        onValueChange={(theme) => {mixpanel.track('Theme Changed', { theme: newTheme });useStore.setState({ theme })}}
+        onValueChange={(theme) => {useStore.setState({ theme })}}
       >
         <SelectTrigger className="w-40">
           <SelectValue placeholder="Select Theme" />
